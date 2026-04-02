@@ -51,6 +51,34 @@
         <p>Check out other laptops and accessories.</p>
         <!-- Add related products here if available -->
     </div>
+    <div class="customer-reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <div class="review-header">
+                <span class="reviewer-name">John Doe</span>
+                <span class="review-rating">★★★★★</span>
+            </div>
+            <p class="review-text">Great product! Highly recommend it.</p>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <span class="reviewer-name">Jane Smith</span>
+                <span class="review-rating">★★★★☆</span>
+            </div>
+            <p class="review-text">Good value for money. Works as expected.</p>
+        </div>
+    </div>
+    <div class="shipping-returns">
+        <h2>Shipping & Returns</h2>
+        <div class="shipping-info">
+            <h3>Shipping Information</h3>
+            <p>We offer free shipping on orders over $50. Standard delivery takes 3-5 business days.</p>
+        </div>
+        <div class="returns-info">
+            <h3>Return Policy</h3>
+            <p>Items can be returned within 30 days of purchase. Please ensure the item is in its original condition.</p>
+        </div>
+    </div>
 </div>
 
 <style>
@@ -226,13 +254,77 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.related-products h2 {
+.related-products p {
+    color: #666;
+}
+
+.customer-reviews {
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.customer-reviews h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.reviewer-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.review-rating {
+    color: #f39c12;
+}
+
+.review-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+.shipping-returns {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.shipping-returns h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.shipping-info, .returns-info {
+    margin-bottom: 20px;
+}
+
+.shipping-info h3, .returns-info h3 {
     color: #333;
     margin-bottom: 10px;
 }
 
-.related-products p {
+.shipping-info p, .returns-info p {
     color: #666;
+    line-height: 1.6;
 }
 </style>
 

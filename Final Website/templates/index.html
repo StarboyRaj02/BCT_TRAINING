@@ -1,0 +1,41 @@
+{% extends 'website/layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <header class="hero">
+        <h1>Welcome to Django Website</h1>
+        <p>This is a simple Django website showcasing products and services.</p>
+        <a href="{% url 'newApp:home' %}" class="btn">View Products</a>
+    </header>
+
+    <section class="features">
+        <h2>Our Features</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>Quality Products</h3>
+                <p>We offer high-quality products with excellent customer service.</p>
+            </div>
+            <div class="feature">
+                <h3>Fast Delivery</h3>
+                <p>Quick and reliable delivery to your doorstep.</p>
+            </div>
+            <div class="feature">
+                <h3>24/7 Support</h3>
+                <p>Our support team is available around the clock.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-preview">
+        <h2>About Us</h2>
+        <p>Learn more about our company and mission.</p>
+        <a href="{% url 'about' %}" class="btn">Read More</a>
+    </section>
+
+    <section class="contact-preview">
+        <h2>Get In Touch</h2>
+        <p>Have questions? We'd love to hear from you.</p>
+        <a href="{% url 'contact' %}" class="btn">Contact Us</a>
+    </section>
+{% endblock %}
